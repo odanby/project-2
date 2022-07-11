@@ -1,0 +1,26 @@
+1. Create a repo in Github
+2. Admin add everyone as a collaborator
+3. Admin set up branch rules so each branch merge needs 2 approvals and the admin must go through the process too
+4. Clone the repo onto local computer
+
+
+
+5. Make sure to open views for Source Control (...) and choose to see Source Control Repositories
+6. Create a new branch and title it your name
+7. Make sure to pull from main so everything you're updating is up-to-date
+8. Publish your branch
+9. Double check on Github the branch is there and okay
+
+
+
+10. Make sure you are in your branch
+11. Create and edit your files
+12. Stage your changes and commit your new changes to your branch
+13. Check that it's okay
+
+
+
+14. Submit a pull request
+15. 2 others need to approve it then merge it with main
+16. Check main is all good
+17. Delete branch
