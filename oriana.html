@@ -39,6 +39,9 @@
 
     <!-- insert your link to next page here -->
     <button id = "button">Click here to go to _____'s page!</button>
+    
+    <br>
+    <button onclick="lyndonPage()">Lyndon's Page</button>
 </body>
 <script>
     const button = document.getElementById("button")
@@ -57,6 +60,10 @@
 
     button.addEventListener("mouseover", changeButtonColor);
     button.addEventListener("mouseleave", revertButtonColor);
+
+    function lyndonPage(){
+        window.location.href = "LyndonPage.html"
+    }
 
 </script>
 </html>
