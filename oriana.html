@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Oriana</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Nanum+Pen+Script:regular);
+
+        body {
+            text-align: center;
+            font-family: 'Nanum Pen Script';
+            background: linear-gradient(to right, white, #40826D);
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 56px;
+        }
+
+        p {
+            color: #40826D;
+            font-size: 36px;
+        }
+
+        button {
+            background-color: #40826D;
+            color: #ffffff;
+            outline: none;
+            border: solid 1px #d6d6d6;
+            font-family: 'Nanum Pen Script';
+            height: 50px;
+            width: 500px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hi, my name is Oriana</h1>
+    <p>Fun Fact: my favorite color is veridian green.</p>
+
+    <!-- insert your link to next page here -->
+    <button id = "button">Click here to go to _____'s page!</button>
+</body>
+<script>
+    const button = document.getElementById("button")
+
+    function changeButtonColor() {
+        button.style.backgroundColor = '#ffffff';
+        button.style.color = '#40826D';
+        button.style.border = 'solid 1px #40826D';
+    }
+
+    function revertButtonColor() {
+        button.style.backgroundColor = '#40826D';
+        button.style.color = '#ffffff';
+        button.style.border = 'solid 1px #d6d6d6';
+    }
+
+    button.addEventListener("mouseover", changeButtonColor);
+    button.addEventListener("mouseleave", revertButtonColor);
+
+</script>
+</html>
