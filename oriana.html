@@ -41,10 +41,11 @@
     <button id = "button">Click here to go to _____'s page!</button>
     
     <br>
-    <button onclick="lyndonPage()">Lyndon's Page</button>
+    <button id = "lyndonbutton" onclick="lyndonPage()">Lyndon's Page</button>
 </body>
 <script>
     const button = document.getElementById("button")
+    const lyndonbutton = document.getElementById("lyndonbutton")
 
     function changeButtonColor() {
         button.style.backgroundColor = '#ffffff';
@@ -58,8 +59,22 @@
         button.style.border = 'solid 1px #d6d6d6';
     }
 
+    function changeButtonColorLyn() {
+        lyndonbutton.style.backgroundColor = '#ffffff';
+        lyndonbutton.style.color = '#40826D';
+        lyndonbutton.style.border = 'solid 1px #40826D';
+    }
+    function revertButtonColorLyn() {
+        lyndonbutton.style.backgroundColor = '#40826D';
+        lyndonbutton.style.color = '#ffffff';
+        lyndonbutton.style.border = 'solid 1px #d6d6d6';
+    }
+
     button.addEventListener("mouseover", changeButtonColor);
     button.addEventListener("mouseleave", revertButtonColor);
+
+    lyndonbutton.addEventListener("mouseover", changeButtonColorLyn);
+    lyndonbutton.addEventListener("mouseleave", revertButtonColorLyn);
 
     function lyndonPage(){
         window.location.href = "LyndonPage.html"
